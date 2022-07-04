@@ -12,5 +12,8 @@ import com.bean.UserBean;
 @Repository
 public interface UserRepository extends CrudRepository<UserBean, UUID> {
 	List<UserBean> findAll();
+	List<UserBean> findByRole(int roleId);
+	UserBean findByUserNameAndPassword(String email,String password);
+	
 
 }

@@ -24,7 +24,10 @@ public class UserBean {
 	int role,userStatus;
 	@Column(name="user_name")
 	String userName;
+	String password;
 	
 	
-
+	
+    //0 -> customer 
+	//1 -> admin 
 }
